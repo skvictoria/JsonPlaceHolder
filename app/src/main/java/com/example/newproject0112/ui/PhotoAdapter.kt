@@ -8,15 +8,16 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.newproject0112.R
 import com.example.newproject0112.model.Photo
 
-class PhotoAdapter: RecyclerView.Adapter<PhotoAdapter.PhotoViewholder>() {
-    private lateinit var photoList: List<Photo>
+class PhotoAdapter(private val list: List<Photo>)
+    : RecyclerView.Adapter<PhotoAdapter.PhotoViewholder>() {
+    //private lateinit var photoList: List<Photo>
 
     override fun getItemCount(): Int {
-        return photoList.size
+        return list.size
     }
 
     override fun onBindViewHolder(holder: PhotoViewholder, position: Int) {
-        holder.bind(photoList[position])
+        holder.bind(list[position])
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PhotoViewholder =
