@@ -1,12 +1,7 @@
-package base
+package com.example.newproject0112.base
 
-import App
 import androidx.lifecycle.ViewModel
-//import di.DaggerAppComponent
-import di.NetworkModule
-import di.AppComponent
-import ui.PhotoListViewModel
-import java.util.*
+//import com.example.newproject0112.di.DaggerAppComponent
 import androidx.databinding.Observable
 import androidx.databinding.PropertyChangeRegistry
 import kotlin.reflect.KProperty

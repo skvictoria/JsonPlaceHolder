@@ -1,4 +1,4 @@
-package di
+package com.example.newproject0112.di
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
@@ -14,7 +14,7 @@ class ViewModelFactory @Inject constructor(
     override fun <T : ViewModel?> create(modelClass: Class<T>): T {
         val creator = viewModels[modelClass]
             ?: viewModels.asIterable().firstOrNull { modelClass.isAssignableFrom(it.key) }?.value
-            ?: throw IllegalArgumentException("unknown model class $modelClass")
+            ?: throw IllegalArgumentException("unknown com.example.newproject0112.model class $modelClass")
         return try{
             @Suppress("unchecked_cast")
             creator.get() as T

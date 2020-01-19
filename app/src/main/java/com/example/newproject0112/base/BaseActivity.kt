@@ -1,7 +1,6 @@
-package base
+package com.example.newproject0112.base
 
 import android.content.Context
-import dagger.android.DaggerActivity
 import dagger.android.support.DaggerAppCompatActivity
 
 abstract class BaseActivity : DaggerAppCompatActivity(){

@@ -1,12 +1,12 @@
-package di
+package com.example.newproject0112.di
 
 import com.facebook.stetho.okhttp3.StethoInterceptor
 import com.squareup.moshi.Moshi
 import dagger.Module
 import dagger.Provides
-import di.util.RxErrorHandlingCallAdapterFactory
+import com.example.newproject0112.di.util.RxErrorHandlingCallAdapterFactory
 import io.reactivex.schedulers.Schedulers
-import model.PhotoService
+import com.example.newproject0112.model.PhotoService
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
@@ -17,7 +17,7 @@ class NetworkModule(private val baseUrl: String){
 
     @Provides
     @Singleton
-    fun provideHttpClient(moshi: Moshi): OkHttpClient =
+    fun provideHttpClient(): OkHttpClient =
         OkHttpClient.Builder()
             .addNetworkInterceptor(StethoInterceptor())
             .build()

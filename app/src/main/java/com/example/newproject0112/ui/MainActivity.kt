@@ -1,10 +1,9 @@
-package ui
+package com.example.newproject0112.ui
 
 import android.os.Bundle
-import androidx.activity.viewModels
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModelProvider
-import base.BaseActivity
+import com.example.newproject0112.base.BaseActivity
 import com.example.newproject0112.R
 import com.example.newproject0112.databinding.ActivityMainBinding
 import javax.inject.Inject
@@ -23,6 +22,6 @@ class MainActivity: BaseActivity(){
         binding.lifecycleOwner = this
 
       //  viewModel.loadPhotos()
-      //  binding.vm = viewModel
+      //  com.example.newproject0112.binding.vm = viewModel
     }
 }

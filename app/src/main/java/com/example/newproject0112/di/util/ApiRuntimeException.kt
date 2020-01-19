@@ -1,4 +1,4 @@
-package di.util
+package com.example.newproject0112.di.util
 
 import retrofit2.HttpException
 import retrofit2.Response

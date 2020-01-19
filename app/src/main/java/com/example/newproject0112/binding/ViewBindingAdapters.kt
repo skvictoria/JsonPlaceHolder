@@ -1,4 +1,4 @@
-package binding
+package com.example.newproject0112.binding
 
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity

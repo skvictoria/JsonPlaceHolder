@@ -1,8 +1,8 @@
-package di
+package com.example.newproject0112.di
 
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
-import ui.MainActivity
+import com.example.newproject0112.ui.MainActivity
 
 @Module
 abstract class ActivityModule{

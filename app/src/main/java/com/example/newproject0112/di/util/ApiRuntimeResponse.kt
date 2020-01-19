@@ -1,4 +1,4 @@
-package di.util
+package com.example.newproject0112.di.util
 
 data class ApiErrorResponse(
 

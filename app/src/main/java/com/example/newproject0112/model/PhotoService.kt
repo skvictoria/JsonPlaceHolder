@@ -1,4 +1,4 @@
-package model
+package com.example.newproject0112.model
 
 import io.reactivex.Single
 import retrofit2.http.GET

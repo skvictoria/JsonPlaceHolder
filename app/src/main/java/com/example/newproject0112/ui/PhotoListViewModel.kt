@@ -1,12 +1,11 @@
-package ui
+package com.example.newproject0112.ui
 
-import base.BaseViewModel
+import com.example.newproject0112.base.BaseViewModel
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
-import io.reactivex.disposables.Disposable
 import io.reactivex.schedulers.Schedulers
-import model.Photo
-import model.PhotoService
+import com.example.newproject0112.model.Photo
+import com.example.newproject0112.model.PhotoService
 import javax.inject.Inject
 
 class PhotoListViewModel @Inject constructor(private val photoservice: PhotoService) : BaseViewModel(){
